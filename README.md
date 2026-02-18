@@ -148,11 +148,11 @@ airflow variables set NEWS_API_KEY "your_api_key_here"
 #### **3. GCS Configuration:**
 ```bash
 # Ensure bucket exists and is accessible
-gsutil ls gs://snowflake-projects-test-gds/news_data_analysis/
+gsutil ls gs://snowflake-projects-test-ags/news_data_analysis/
 ```
 
 #### **4. Airflow Configuration:**
-- Configure Snowflake connection: `snowflake_conn`
+- Configure Snowflake connection: `snowflake_connc`
 - Set up GCP service account permissions
 - Deploy DAG to Airflow environment
 
@@ -255,7 +255,7 @@ SNOWFLAKE_WAREHOUSE=COMPUTE_WH
 ```
 
 ### **Airflow Connections:**
-- **Snowflake Connection**: `snowflake_conn`
+- **Snowflake Connection**: `snowflake_connc`
 - **GCP Connection**: `google_cloud_default`
 
 ### **Customizable Parameters:**
